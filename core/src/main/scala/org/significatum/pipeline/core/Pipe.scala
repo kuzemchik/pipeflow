@@ -2,7 +2,7 @@ package org.significatum.pipeline.core
 
 
 object Pipe {
-  def wrap[T](value: => T):Pipe[T] = {
+  def out[T](value: => T):Pipe[T] = {
     new Pipe[T] {
       def get(): T = value
     }
