@@ -1,16 +1,17 @@
-package org.significatum.pipeline.example
+package com.example
 
+import com.typesafe.config.{Config, ConfigFactory}
 import org.apache.spark.sql.SparkSession
-import org.significatum.pipeline.spark.Env
 
-class TestEnv extends Env {
+object ClusterEnv extends Env {
   lazy val spark: SparkSession = {
 
     val session = SparkSession.builder()
-      .appName("test")
-      .master("local")
+      .appName("Example App")
       .getOrCreate()
     session.sparkContext.setLogLevel("ERROR")
     session
   }
+
+  lazy val config: Config = ConfigFactory.load()
 }
