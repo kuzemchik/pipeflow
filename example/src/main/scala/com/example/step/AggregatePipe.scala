@@ -1,4 +1,4 @@
-package org.significatum.pipeline.example.step
+package com.example.step
 
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions._

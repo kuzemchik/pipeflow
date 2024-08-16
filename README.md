@@ -14,6 +14,6 @@ The framework is designed to be focused on readability and at the same time to b
   - [x] Lazy evaluation
   - [x] Foreach and Flatmap support (different for comprehensions use cases)
   - [x] Base tests
+- [x] Apache Spark support for Java 13+
 - [ ] DateStamp and common date related functions
 - [ ] Integration with scheduler (Airflow?)
-- [ ] Apache Spark support for Java 13+
